@@ -1,6 +1,6 @@
 {
   "name": "@absolunet/eslint-config-test",
-  "version": "3.2.2",
+  "version": "4.0.0-beta.1",
   "description": "ESLint config for testing",
   "definition": "",
   "homepage": "https://github.com/absolunet/eslint-config",
@@ -40,8 +40,8 @@
     "eslint-plugin-jest": "27.1.7"
   },
   "dependencies": {
-    "@absolunet/eslint-config-node": "3.2.2",
-    "@absolunet/eslint-loader": "3.2.2"
+    "@absolunet/eslint-config-node": "4.0.0-beta.1",
+    "@absolunet/eslint-loader": "4.0.0-beta.1"
   },
   "peerDependencies": {
     "eslint-plugin-jest": "^27.1.7"

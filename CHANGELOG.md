@@ -10,6 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [Unreleased]
+
+
+
+## [4.0.0-beta.1] - 2022-12-20
 ### Added
 - Create `@absolunet/eslint-config-typescript` - With TypeScript rules
 - `node`: Expose the default script/CommonJS version at `@absolunet/eslint-config-node/script`
@@ -24,7 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `spire`: Extend `@absolunet/eslint-config-typescript` instead of native TypeScript configuration
 - `test`: Update to Jest 27.1.7
 
-#### Base configurations on recommanded rules
+#### Base configurations on recommended rules
 - `core`: Use `eslint:recommended` and `unicorn/recommended`
 - `jsdoc`: Use `jsdoc/recommended`
 - `node`: Use `node/recommended-script` or `node/recommended-module`
@@ -691,7 +695,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-[Unreleased]:   https://github.com/absolunet/eslint-config/compare/3.2.2...HEAD
+[Unreleased]:   https://github.com/absolunet/eslint-config/compare/4.0.0-beta.1...HEAD
+[4.0.0-beta.1]: https://github.com/absolunet/eslint-config/compare/3.2.2...4.0.0-beta.1
 [3.2.2]:        https://github.com/absolunet/eslint-config/compare/3.2.1...3.2.2
 [3.2.1]:        https://github.com/absolunet/eslint-config/compare/3.2.0...3.2.1
 [3.2.0]:        https://github.com/absolunet/eslint-config/compare/3.1.0...3.2.0

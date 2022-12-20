@@ -1,6 +1,6 @@
 {
   "name": "@absolunet/eslint-config-node",
-  "version": "3.2.2",
+  "version": "4.0.0-beta.1",
   "description": "ESLint config for Node.js",
   "definition": "",
   "homepage": "https://github.com/absolunet/eslint-config",
@@ -43,8 +43,8 @@
     "eslint-plugin-node": "11.1.0"
   },
   "dependencies": {
-    "@absolunet/eslint-config-core": "3.2.2",
-    "@absolunet/eslint-loader": "3.2.2",
+    "@absolunet/eslint-config-core": "4.0.0-beta.1",
+    "@absolunet/eslint-loader": "4.0.0-beta.1",
     "deepmerge": "^4.2.2"
   },
   "peerDependencies": {
