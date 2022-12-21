@@ -13,6 +13,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - `node`: Expose `@absolunet/eslint-config-node/module/typescript`
 
+### Changed
+- `node/module`: Deactivate `import/prefer-default-export`
+
+### Fixed
+- `node`: Remove unpublished `import/consistent-type-specifier-style` rule
+- `node`: Remove unpublished `import/no-empty-named-blocks` rule
 
 
 
