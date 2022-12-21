@@ -28,7 +28,8 @@
   "exports": {
     ".": "./dist/node/index.js",
     "./script": "./dist/node/script.js",
-    "./module": "./dist/node/module.js"
+    "./module": "./dist/node/module.js",
+    "./module/typescript": "./dist/node/module-typescript.js"
   },
   "scripts": {
     "test": "node test --scope=all",
@@ -40,6 +41,9 @@
   },
   "devDependencies": {
     "@absolunet/tester": "5.0.0-beta.5",
+    "@typescript-eslint/parser": "5.47.0",
+    "eslint-import-resolver-typescript": "3.5.2",
+    "eslint-plugin-import": "2.26.0",
     "eslint-plugin-node": "11.1.0"
   },
   "dependencies": {
@@ -48,6 +52,8 @@
     "deepmerge": "^4.2.2"
   },
   "peerDependencies": {
+    "@typescript-eslint/parser": "^5.47.0",
+    "eslint-import-resolver-typescript": "^3.5.2",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0"
   }

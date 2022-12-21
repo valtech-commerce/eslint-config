@@ -22,7 +22,7 @@ $ npm install @absolunet/eslint-config-node
 
 Add some ESLint config to your `.eslintrc.yaml`:
 
-For type `script` or CommonJS
+For type `script` / CommonJS
 
 ```yaml
 extends: '@absolunet/eslint-config-node'
@@ -30,15 +30,25 @@ extends: '@absolunet/eslint-config-node'
 extends: '@absolunet/eslint-config-node/script'
 ```
 
-For type `module` or ESM
+For type `module` / ESM
 
 ```yaml
+# Using JavaScript
 extends: "@absolunet/eslint-config-node/module"
+
+# Using TypeScript
+extends: "@absolunet/eslint-config-node/module/typescript"
+
+settings:
+  import/resolver:
+    typescript:
+      project: "./tsconfig.json" # Your TS config file
 ```
 
 ## Used plugins
 
 - [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import) - import/export syntax rules
+- [eslint-import-resolver-typescript](https://github.com/import-js/eslint-import-resolver-typescript) - TypeScript support to `eslint-plugin-import`
 - [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node) - Additional ESLint's rules for Node.js
 
 ## Used configuration
@@ -46,6 +56,7 @@ extends: "@absolunet/eslint-config-node/module"
 - [node/recommended-script](https://github.com/mysticatea/eslint-plugin-node#-configs) - Recommended rules for Node.js with CommonJS.
 - [node/recommended-module](https://github.com/mysticatea/eslint-plugin-node#-configs) - Recommended rules for Node.js with ESM.
 - [import/recommended](https://github.com/import-js/eslint-plugin-import) - Recommended rules for Import.
+- [import/typescript](https://github.com/import-js/eslint-plugin-import) - TypeScript support.
 
 ## Related
 
