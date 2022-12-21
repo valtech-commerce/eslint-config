@@ -10,6 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [Unreleased]
+
+
+
+## [4.0.0-beta.2] - 2022-12-21
 ### Added
 - `node`: Expose `@absolunet/eslint-config-node/module/typescript`
 
@@ -705,7 +709,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-[Unreleased]:   https://github.com/absolunet/eslint-config/compare/4.0.0-beta.1...HEAD
+[Unreleased]:   https://github.com/absolunet/eslint-config/compare/4.0.0-beta.2...HEAD
+[4.0.0-beta.2]: https://github.com/absolunet/eslint-config/compare/4.0.0-beta.1...4.0.0-beta.2
 [4.0.0-beta.1]: https://github.com/absolunet/eslint-config/compare/3.2.2...4.0.0-beta.1
 [3.2.2]:        https://github.com/absolunet/eslint-config/compare/3.2.1...3.2.2
 [3.2.1]:        https://github.com/absolunet/eslint-config/compare/3.2.0...3.2.1

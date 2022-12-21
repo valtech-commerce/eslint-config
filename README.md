@@ -25,7 +25,7 @@
 
 ```mermaid
   graph TD;
-    core --> browser & node/script & node/module
+    core --> browser & node/script & node/module & node/module/typescript
       browser --> nwayo & react
         react --> pwastudio & spire
       node/module --> test
