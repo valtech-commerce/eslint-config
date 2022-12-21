@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - `node/module`: Deactivate `import/prefer-default-export`
+- `node/module/typescript`: Deactivate `unicorn/prefer-module` as TypeScript to ESM Node.js is not working correctly
 
 ### Fixed
 - `node`: Remove unpublished `import/consistent-type-specifier-style` rule

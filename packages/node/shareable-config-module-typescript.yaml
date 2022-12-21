@@ -10,5 +10,6 @@ settings:
       alwaysTryTypes: true
 
 rules:
+  unicorn/prefer-module: [off] # TypeScript to ESM Node.js is not working correctly
   node/no-missing-import: [off]
   import/extensions: [off]

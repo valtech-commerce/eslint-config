@@ -26,8 +26,8 @@ Add some ESLint config to your `.eslintrc.yaml`:
 extends: "@absolunet/eslint-config-typescript"
 
 parserOptions:
-	project:
-	 - "./tsconfig.json"  # Your TS config file
+  project:
+    - "./tsconfig.json" # Your TS config file
 ```
 
 ## Used parser
