@@ -1,5 +1,5 @@
 extends:
-  - "@absolunet/eslint-config-core"
+  - "@valtech-commerce/eslint-config-core"
   - "plugin:node/recommended-script"
 
 rules:

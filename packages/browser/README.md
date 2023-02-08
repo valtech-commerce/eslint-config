@@ -1,4 +1,4 @@
-# @absolunet/eslint-config-browser
+# @valtech-commerce/eslint-config-browser
 
 [![npm][npm-badge]][npm-url]
 [![npm dependencies][dependencies-badge]][dependencies-url]
@@ -10,12 +10,12 @@
 
 Opinionated ESLint [shareable config](https://eslint.org/docs/developer-guide/shareable-configs.html) for browser.
 
-Extends [@absolunet/eslint-config-core](https://github.com/absolunet/eslint-config)
+Extends [@valtech-commerce/eslint-config-core](https://github.com/valtech-commerce/eslint-config)
 
 ## Install
 
 ```
-$ npm install @absolunet/eslint-config-browser
+$ npm install @valtech-commerce/eslint-config-browser
 ```
 
 ## Usage
@@ -23,28 +23,28 @@ $ npm install @absolunet/eslint-config-browser
 Add some ESLint config to your `.eslintrc.yaml`:
 
 ```yaml
-extends: "@absolunet/eslint-config-browser"
+extends: "@valtech-commerce/eslint-config-browser"
 ```
 
 ## Related
 
-- [Other configs](https://github.com/absolunet/eslint-config)
+- [Other configs](https://github.com/valtech-commerce/eslint-config)
 
 ## Documentation
 
-View [documentation](https://documentation.absolunet.com/eslint-config/browser)
+View [documentation](https://valtech-commerce.github.io/eslint-config/browser)
 
 ## License
 
-[MIT](LICENSE) © [Absolunet](https://absolunet.com)
+[MIT](LICENSE) © [Valtech Canada inc.](https://www.valtech.ca/)
 
-[npm-badge]: https://img.shields.io/npm/v/@absolunet/eslint-config-browser?style=flat-square
-[dependencies-badge]: https://img.shields.io/david/absolunet/eslint-config?path=packages/browser&style=flat-square
-[tests-badge]: https://img.shields.io/github/workflow/status/absolunet/eslint-config/tests/production?label=tests&style=flat-square
-[npms-badge]: https://badges.npms.io/%40absolunet%2Feslint-config-browser.svg?style=flat-square
+[npm-badge]: https://img.shields.io/npm/v/@valtech-commerce/eslint-config-browser?style=flat-square
+[dependencies-badge]: https://img.shields.io/david/valtech-commerce/eslint-config?path=packages/browser&style=flat-square
+[tests-badge]: https://img.shields.io/github/workflow/status/valtech-commerce/eslint-config/tests/main?label=tests&style=flat-square
+[npms-badge]: https://badges.npms.io/%40valtech-commerce%2Feslint-config-browser.svg?style=flat-square
 [license-badge]: https://img.shields.io/badge/license-MIT-green?style=flat-square
-[npm-url]: https://www.npmjs.com/package/@absolunet/eslint-config-browser
-[dependencies-url]: https://david-dm.org/absolunet/eslint-config?path=packages/browser
-[tests-url]: https://github.com/absolunet/eslint-config/actions?query=workflow%3Atests+branch%3Aproduction
-[npms-url]: https://npms.io/search?q=%40absolunet%2Feslint-config-browser
+[npm-url]: https://www.npmjs.com/package/@valtech-commerce/eslint-config-browser
+[dependencies-url]: https://david-dm.org/valtech-commerce/eslint-config?path=packages/browser
+[tests-url]: https://github.com/valtech-commerce/eslint-config/actions?query=workflow%3Atests+branch%3Amain
+[npms-url]: https://npms.io/search?q=%40valtech-commerce%2Feslint-config-browser
 [license-url]: https://opensource.org/licenses/MIT

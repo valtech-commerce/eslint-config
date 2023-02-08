@@ -1,4 +1,4 @@
-extends: "@absolunet/eslint-config-core"
+extends: "@valtech-commerce/eslint-config-core"
 
 env:
   browser: true

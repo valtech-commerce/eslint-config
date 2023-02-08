@@ -1,5 +1,5 @@
 extends:
-  - "@absolunet/eslint-config-node/module"
+  - "@valtech-commerce/eslint-config-node/module"
 
 # Disabled because this is a CommonJS package
 rules:

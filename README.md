@@ -9,17 +9,17 @@
 
 | Package                                                    | Version                                                                                                                                           | Description                                               | Documentation                                                        |
 | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | -------------------------------------------------------------------- |
-| **[@absolunet/eslint-config-core](packages/core)**         | [![npm](https://img.shields.io/npm/v/@absolunet/eslint-config-core.svg)](https://www.npmjs.com/package/@absolunet/eslint-config-core)             | **Core rules**                                            | [docs](https://documentation.absolunet.com/eslint-config/core)       |
-| [@absolunet/eslint-config-node](packages/node)             | [![npm](https://img.shields.io/npm/v/@absolunet/eslint-config-node.svg)](https://www.npmjs.com/package/@absolunet/eslint-config-node)             | Node.js rules                                             | [docs](https://documentation.absolunet.com/eslint-config/node)       |
-| [@absolunet/eslint-config-test](packages/test)             | [![npm](https://img.shields.io/npm/v/@absolunet/eslint-config-test.svg)](https://www.npmjs.com/package/@absolunet/eslint-config-test)             | Testing rules                                             | [docs](https://documentation.absolunet.com/eslint-config/test)       |
-| [@absolunet/eslint-config-browser](packages/browser)       | [![npm](https://img.shields.io/npm/v/@absolunet/eslint-config-browser.svg)](https://www.npmjs.com/package/@absolunet/eslint-config-browser)       | Browser rules                                             | [docs](https://documentation.absolunet.com/eslint-config/browser)    |
-| [@absolunet/eslint-config-nwayo](packages/nwayo)           | [![npm](https://img.shields.io/npm/v/@absolunet/eslint-config-nwayo.svg)](https://www.npmjs.com/package/@absolunet/eslint-config-nwayo)           | [nwayo](https://documentation.absolunet.com/nwayo/) rules | [docs](https://documentation.absolunet.com/eslint-config/nwayo)      |
-| [@absolunet/eslint-config-react](packages/react)           | [![npm](https://img.shields.io/npm/v/@absolunet/eslint-config-react.svg)](https://www.npmjs.com/package/@absolunet/eslint-config-react)           | React rules                                               | [docs](https://documentation.absolunet.com/eslint-config/react)      |
-| [@absolunet/eslint-config-jsdoc](packages/jsdoc)           | [![npm](https://img.shields.io/npm/v/@absolunet/eslint-config-jsdoc.svg)](https://www.npmjs.com/package/@absolunet/eslint-config-jsdoc)           | JSDoc rules                                               | [docs](https://documentation.absolunet.com/eslint-config/jsdoc)      |
-| [@absolunet/eslint-config-json](packages/json)             | [![npm](https://img.shields.io/npm/v/@absolunet/eslint-config-json.svg)](https://www.npmjs.com/package/@absolunet/eslint-config-json)             | JSON rules                                                | [docs](https://documentation.absolunet.com/eslint-config/json)       |
-| [@absolunet/eslint-config-typescript](packages/typescript) | [![npm](https://img.shields.io/npm/v/@absolunet/eslint-config-typescript.svg)](https://www.npmjs.com/package/@absolunet/eslint-config-typescript) | TypeScript rules                                          | [docs](https://documentation.absolunet.com/eslint-config/typescript) |
+| **[@valtech-commerce/eslint-config-core](packages/core)**         | [![npm](https://img.shields.io/npm/v/@valtech-commerce/eslint-config-core.svg)](https://www.npmjs.com/package/@valtech-commerce/eslint-config-core)             | **Core rules**                                            | [docs](https://valtech-commerce.github.io/eslint-config/core)       |
+| [@valtech-commerce/eslint-config-node](packages/node)             | [![npm](https://img.shields.io/npm/v/@valtech-commerce/eslint-config-node.svg)](https://www.npmjs.com/package/@valtech-commerce/eslint-config-node)             | Node.js rules                                             | [docs](https://valtech-commerce.github.io/eslint-config/node)       |
+| [@valtech-commerce/eslint-config-test](packages/test)             | [![npm](https://img.shields.io/npm/v/@valtech-commerce/eslint-config-test.svg)](https://www.npmjs.com/package/@valtech-commerce/eslint-config-test)             | Testing rules                                             | [docs](https://valtech-commerce.github.io/eslint-config/test)       |
+| [@valtech-commerce/eslint-config-browser](packages/browser)       | [![npm](https://img.shields.io/npm/v/@valtech-commerce/eslint-config-browser.svg)](https://www.npmjs.com/package/@valtech-commerce/eslint-config-browser)       | Browser rules                                             | [docs](https://valtech-commerce.github.io/eslint-config/browser)    |
+| [@valtech-commerce/eslint-config-nwayo](packages/nwayo)           | [![npm](https://img.shields.io/npm/v/@valtech-commerce/eslint-config-nwayo.svg)](https://www.npmjs.com/package/@valtech-commerce/eslint-config-nwayo)           | [nwayo](https://documentation.absolunet.com/nwayo/) rules | [docs](https://valtech-commerce.github.io/eslint-config/nwayo)      |
+| [@valtech-commerce/eslint-config-react](packages/react)           | [![npm](https://img.shields.io/npm/v/@valtech-commerce/eslint-config-react.svg)](https://www.npmjs.com/package/@valtech-commerce/eslint-config-react)           | React rules                                               | [docs](https://valtech-commerce.github.io/eslint-config/react)      |
+| [@valtech-commerce/eslint-config-jsdoc](packages/jsdoc)           | [![npm](https://img.shields.io/npm/v/@valtech-commerce/eslint-config-jsdoc.svg)](https://www.npmjs.com/package/@valtech-commerce/eslint-config-jsdoc)           | JSDoc rules                                               | [docs](https://valtech-commerce.github.io/eslint-config/jsdoc)      |
+| [@valtech-commerce/eslint-config-json](packages/json)             | [![npm](https://img.shields.io/npm/v/@valtech-commerce/eslint-config-json.svg)](https://www.npmjs.com/package/@valtech-commerce/eslint-config-json)             | JSON rules                                                | [docs](https://valtech-commerce.github.io/eslint-config/json)       |
+| [@valtech-commerce/eslint-config-typescript](packages/typescript) | [![npm](https://img.shields.io/npm/v/@valtech-commerce/eslint-config-typescript.svg)](https://www.npmjs.com/package/@valtech-commerce/eslint-config-typescript) | TypeScript rules                                          | [docs](https://valtech-commerce.github.io/eslint-config/typescript) |
 | -                                                          | -                                                                                                                                                 | -                                                         | -                                                                    |
-| [@absolunet/eslint-loader](packages/loader)                | [![npm](https://img.shields.io/npm/v/@absolunet/eslint-loader.svg)](https://www.npmjs.com/package/@absolunet/eslint-loader)                       | Config loader                                             | [docs](https://documentation.absolunet.com/eslint-config/loader)     |
+| [@valtech-commerce/eslint-loader](packages/loader)                | [![npm](https://img.shields.io/npm/v/@valtech-commerce/eslint-loader.svg)](https://www.npmjs.com/package/@valtech-commerce/eslint-loader)                       | Config loader                                             | [docs](https://valtech-commerce.github.io/eslint-config/loader)     |
 
 ### Dependency tree
 
@@ -37,7 +37,7 @@
 ## Install
 
 ```
-$ npm install @absolunet/eslint-config-[RULESET]
+$ npm install @valtech-commerce/eslint-config-[RULESET]
 ```
 
 ## Usage
@@ -45,7 +45,7 @@ $ npm install @absolunet/eslint-config-[RULESET]
 Add some ESLint config to your `.eslintrc.yaml`:
 
 ```yaml
-extends: "@absolunet/eslint-config-[RULESET]"
+extends: "@valtech-commerce/eslint-config-[RULESET]"
 ```
 
 ## Used plugins
@@ -60,11 +60,11 @@ extends: "@absolunet/eslint-config-[RULESET]"
 
 ## Related
 
-- [prettier-config](https://github.com/absolunet/prettier-config) - Opinionated Prettier shareable configs which are used with these ESLint configurations.
+- [prettier-config](https://github.com/valtech-commerce/prettier-config) - Opinionated Prettier shareable configs which are used with these ESLint configurations.
 
 ## Documentation
 
-See the [full documentation](https://documentation.absolunet.com/eslint-config) for an in-depth look.
+See the [full documentation](https://valtech-commerce.github.io/eslint-config) for an in-depth look.
 
 See the [Changelog](CHANGELOG.md) to see what has changed.
 
@@ -81,9 +81,9 @@ By interacting with this repository, organization, or community you agree to abi
 
 ## License
 
-[MIT](LICENSE) © [Absolunet](https://absolunet.com)
+[MIT](LICENSE) © [Valtech Canada inc.](https://www.valtech.ca/)
 
-[tests-badge]: https://github.com/absolunet/eslint-config/workflows/tests/badge.svg?branch=production
+[tests-badge]: https://github.com/valtech-commerce/eslint-config/workflows/tests/badge.svg?branch=main
 [lerna-badge]: https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg
-[tests-url]: https://github.com/absolunet/eslint-config/actions?query=workflow%3Atests+branch%3Aproduction
+[tests-url]: https://github.com/valtech-commerce/eslint-config/actions?query=workflow%3Atests+branch%3Amain
 [lerna-url]: https://lernajs.io/

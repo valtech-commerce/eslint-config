@@ -1,7 +1,7 @@
 extends:
   - "plugin:react/recommended"
-  - "@absolunet/eslint-config-react"
-  - "@absolunet/eslint-config-typescript"
+  - "@valtech-commerce/eslint-config-react"
+  - "@valtech-commerce/eslint-config-typescript"
 
 settings:
   react:

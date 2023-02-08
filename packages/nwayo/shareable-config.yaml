@@ -1,4 +1,4 @@
-extends: "@absolunet/eslint-config-browser"
+extends: "@valtech-commerce/eslint-config-browser"
 
 env:
   jquery: true

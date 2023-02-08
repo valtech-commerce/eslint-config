@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>@absolunet/eslint-config-node API documentation</title>
+	<title>@valtech-commerce/eslint-config-node API documentation</title>
 
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta http-equiv="cleartype" content="on">
@@ -26,7 +26,7 @@
 	<link rel="icon"             href="../../assets__/icons/icon-196.png" sizes="196x196">
 	<link rel="icon"             href="../../assets__/icons/icon-228.png" sizes="228x228">
 
-	<meta name="application-name"                content="@absolunet/eslint-config-node">
+	<meta name="application-name"                content="@valtech-commerce/eslint-config-node">
 	<meta name="msapplication-TileColor"         content="#2b2d3c">
 	<meta name="msapplication-square70x70logo"   content="../../assets__/icons/tile-small.png">
 	<meta name="msapplication-square150x150logo" content="../../assets__/icons/tile-medium.png">
@@ -37,14 +37,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,500,700|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 
 	
-	<!-- @absolunet/manager@3.0.0-beta.6 (c) 2011-2022 Absolunet -->
+	<!-- @absolunet/manager@3.0.0-beta.6 (c) 2011-2023 Absolunet -->
 </head>
 <body>
 	
 
 	<header>
-		<p class="package"><a href="../">@absolunet/eslint-config-node</a><span class="version">3.2.1</span></p>
-		<a href="https://github.com/absolunet/eslint-config" class="github" data-external="external">View on GitHub</a>
+		<p class="package"><a href="../">@valtech-commerce/eslint-config-node</a><span class="version">4.0.0-beta.2</span></p>
+		<a href="https://github.com/valtech-commerce/eslint-config" class="github" data-external="external">View on GitHub</a>
 	</header>
 
 	<div class="container">
@@ -79,27 +79,51 @@
 
 
     <section class="readme">
-        <article><h1>@absolunet/eslint-config-node</h1>
-<p><a href="https://www.npmjs.com/package/@absolunet/eslint-config-node"><img src="https://img.shields.io/npm/v/@absolunet/eslint-config-node?style=flat-square" alt="npm"></a>
-<a href="https://david-dm.org/absolunet/eslint-config?path=packages/node"><img src="https://img.shields.io/david/absolunet/eslint-config?path=packages/node&amp;style=flat-square" alt="npm dependencies"></a>
-<a href="https://github.com/absolunet/eslint-config/actions?query=workflow%3Atests+branch%3Aproduction"><img src="https://img.shields.io/github/workflow/status/absolunet/eslint-config/tests/production?label=tests&amp;style=flat-square" alt="Tests"></a>
-<a href="https://npms.io/search?q=%40absolunet%2Feslint-config-node"><img src="https://badges.npms.io/%40absolunet%2Feslint-config-node.svg?style=flat-square" alt="npms"></a>
+        <article><h1>@valtech-commerce/eslint-config-node</h1>
+<p><a href="https://www.npmjs.com/package/@valtech-commerce/eslint-config-node"><img src="https://img.shields.io/npm/v/@valtech-commerce/eslint-config-node?style=flat-square" alt="npm"></a>
+<a href="https://david-dm.org/valtech-commerce/eslint-config?path=packages/node"><img src="https://img.shields.io/david/valtech-commerce/eslint-config?path=packages/node&amp;style=flat-square" alt="npm dependencies"></a>
+<a href="https://github.com/valtech-commerce/eslint-config/actions?query=workflow%3Atests+branch%3Amain"><img src="https://img.shields.io/github/workflow/status/valtech-commerce/eslint-config/tests/main?label=tests&amp;style=flat-square" alt="Tests"></a>
+<a href="https://npms.io/search?q=%40valtech-commerce%2Feslint-config-node"><img src="https://badges.npms.io/%40valtech-commerce%2Feslint-config-node.svg?style=flat-square" alt="npms"></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License: MIT"></a></p>
 <blockquote>
 <p>ESLint config for Node.js</p>
 </blockquote>
 <p>Opinionated ESLint <a href="https://eslint.org/docs/developer-guide/shareable-configs.html">shareable config</a> for Node.js.</p>
-<p>Extends <a href="https://github.com/absolunet/eslint-config">@absolunet/eslint-config-core</a></p>
+<p>Extends <a href="https://github.com/valtech-commerce/eslint-config">@valtech-commerce/eslint-config-core</a></p>
 <h2>Install</h2>
-<pre class="prettyprint source"><code>$ npm install @absolunet/eslint-config-node
+<pre class="prettyprint source"><code>$ npm install @valtech-commerce/eslint-config-node
 </code></pre>
 <h2>Usage</h2>
 <p>Add some ESLint config to your <code>.eslintrc.yaml</code>:</p>
-<pre class="prettyprint source lang-yaml"><code>extends: '@absolunet/node'
+<p>For type <code>script</code> / CommonJS</p>
+<pre class="prettyprint source lang-yaml"><code>extends: '@valtech-commerce/eslint-config-node'
+# or
+extends: '@valtech-commerce/eslint-config-node/script'
+</code></pre>
+<p>For type <code>module</code> / ESM</p>
+<pre class="prettyprint source lang-yaml"><code># Using JavaScript
+extends: &quot;@valtech-commerce/eslint-config-node/module&quot;
+
+# Using TypeScript
+extends: &quot;@valtech-commerce/eslint-config-node/module/typescript&quot;
+
+settings:
+  import/resolver:
+    typescript:
+      project: &quot;./tsconfig.json&quot; # Your TS config file
 </code></pre>
 <h2>Used plugins</h2>
 <ul>
+<li><a href="https://github.com/benmosher/eslint-plugin-import">eslint-plugin-import</a> - import/export syntax rules</li>
+<li><a href="https://github.com/import-js/eslint-import-resolver-typescript">eslint-import-resolver-typescript</a> - TypeScript support to <code>eslint-plugin-import</code></li>
 <li><a href="https://github.com/mysticatea/eslint-plugin-node">eslint-plugin-node</a> - Additional ESLint's rules for Node.js</li>
+</ul>
+<h2>Used configuration</h2>
+<ul>
+<li><a href="https://github.com/mysticatea/eslint-plugin-node#-configs">node/recommended-script</a> - Recommended rules for Node.js with CommonJS.</li>
+<li><a href="https://github.com/mysticatea/eslint-plugin-node#-configs">node/recommended-module</a> - Recommended rules for Node.js with ESM.</li>
+<li><a href="https://github.com/import-js/eslint-plugin-import">import/recommended</a> - Recommended rules for Import.</li>
+<li><a href="https://github.com/import-js/eslint-plugin-import">import/typescript</a> - TypeScript support.</li>
 </ul>
 <h2>Related</h2>
 <ul>
@@ -107,13 +131,13 @@
 <p><a href="https://github.com/absolunet/node-tester">@absolunet/tester</a> - Test suite for Node.js projects.</p>
 </li>
 <li>
-<p><a href="https://github.com/absolunet/eslint-config">Other configs</a></p>
+<p><a href="https://github.com/valtech-commerce/eslint-config">Other configs</a></p>
 </li>
 </ul>
 <h2>Documentation</h2>
-<p>View <a href="https://documentation.absolunet.com/eslint-config/node">documentation</a></p>
+<p>View <a href="https://valtech-commerce.github.io/eslint-config/node">documentation</a></p>
 <h2>License</h2>
-<p><a href="LICENSE">MIT</a> © <a href="https://absolunet.com">Absolunet</a></p></article>
+<p><a href="LICENSE">MIT</a> © <a href="https://www.valtech.ca/">Valtech Canada inc.</a></p></article>
     </section>
 
 
@@ -125,7 +149,7 @@
 	</div>
 
 	<footer>
-		MIT © 2011-2022 <span class="made">Made with <span class="adjective" data-component="adjective">&#x2764;</span> by <a href="https://absolunet.com" data-external="external">Absolunet</a></span>
+		MIT © 2011-2023 <span class="made">Made with <span class="adjective" data-component="adjective">&#x2764;</span> by <a href="https://absolunet.com" data-external="external">Absolunet</a></span>
 	</footer>
 
 	<script src="../../assets__/main.js"></script>

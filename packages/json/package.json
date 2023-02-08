@@ -1,12 +1,12 @@
 {
-  "name": "@absolunet/eslint-config-json",
+  "name": "@valtech-commerce/eslint-config-json",
   "version": "4.0.0-beta.2",
   "description": "ESLint config for JSON",
   "definition": "",
-  "homepage": "https://github.com/absolunet/eslint-config",
+  "homepage": "https://github.com/valtech-commerce/eslint-config",
   "author": {
-    "name": "Absolunet",
-    "url": "https://absolunet.com"
+    "name": "Valtech Canada inc.",
+    "url": "https://www.valtech.ca/"
   },
   "keywords": [
     "eslint",
@@ -16,11 +16,11 @@
   ],
   "license": "MIT",
   "repository": {
-    "url": "git://github.com/absolunet/eslint-config.git",
+    "url": "git://github.com/valtech-commerce/eslint-config.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/absolunet/eslint-config/issues"
+    "url": "https://github.com/valtech-commerce/eslint-config/issues"
   },
   "engines": {
     "node": ">= 14.13.1"
@@ -40,7 +40,7 @@
     "eslint-plugin-json": "3.1.0"
   },
   "dependencies": {
-    "@absolunet/eslint-loader": "4.0.0-beta.2"
+    "@valtech-commerce/eslint-loader": "4.0.0-beta.2"
   },
   "peerDependencies": {
     "eslint": "^8.30.0",

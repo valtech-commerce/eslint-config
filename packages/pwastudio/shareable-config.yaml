@@ -1,7 +1,7 @@
 extends:
   - "plugin:jsx-a11y/recommended" # (from @magento/eslint-config)
   - "plugin:package-json/recommended" # (from @magento/eslint-config)
-  - "@absolunet/eslint-config-react"
+  - "@valtech-commerce/eslint-config-react"
 
 globals:
   process: readonly

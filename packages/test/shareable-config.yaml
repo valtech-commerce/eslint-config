@@ -1,7 +1,7 @@
 extends:
   - "plugin:jest/recommended"
   - "plugin:jest/style"
-  - "@absolunet/eslint-config-node/module"
+  - "@valtech-commerce/eslint-config-node/module"
 
 globals:
   require: readonly

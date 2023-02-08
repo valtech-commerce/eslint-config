@@ -1,7 +1,7 @@
 extends:
   - airbnb
   - airbnb/hooks
-  - "@absolunet/eslint-config-browser"
+  - "@valtech-commerce/eslint-config-browser"
 
 parser: "@babel/eslint-parser"
 parserOptions:

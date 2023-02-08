@@ -32,7 +32,7 @@ when.packageIsParsed = () => {
 
 //-- Then - Config
 then.packageNameShouldBeValid = () => {
-	expect(packageConfig.name).toMatch(/^@absolunet\/eslint-config-(?<kebab1>[a-z][a-z0-9]*)(?<kebab2>-[a-z0-9]+)*$/u);
+	expect(packageConfig.name).toMatch(/^@valtech-commerce\/eslint-config-(?<kebab1>[a-z][a-z0-9]*)(?<kebab2>-[a-z0-9]+)*$/u);
 };
 
 then.packageKeywordsShouldBeValid = () => {

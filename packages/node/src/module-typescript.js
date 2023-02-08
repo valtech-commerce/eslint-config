@@ -1,7 +1,7 @@
 //--------------------------------------------------------
 //-- ESLint config - Module TypeScript
 //--------------------------------------------------------
-import loader from "@absolunet/eslint-loader";
+import loader from "@valtech-commerce/eslint-loader";
 import deepMerge from "deepmerge";
 
 const commonConfig = loader(__dirname, "shareable-config-common.yaml");
