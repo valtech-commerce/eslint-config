@@ -1,12 +1,13 @@
 //--------------------------------------------------------
-//-- Package - Given-When-Then
+//-- Standards - Given-When-Then
 //--------------------------------------------------------
-import fss from "@absolunet/fss";
-import { given as baseGiven, when as baseWhen, then as baseThen } from "../base.gwt.js";
+import path from "node:path";
+import fss from "@valtech-commerce/fss";
+import * as gwt from "../utils/base.gwt";
 
-const given = { ...baseGiven };
-const when = { ...baseWhen };
-const then = { ...baseThen };
+const given = { ...gwt.given };
+const when = { ...gwt.when };
+const then = { ...gwt.then };
 
 let root;
 let packageConfig;
@@ -21,8 +22,8 @@ given.noPackage = () => {
 };
 
 //-- Given - Root
-given.root = (value) => {
-	root = value;
+given.root = () => {
+	root = path.join(__dirname, "..", "..");
 };
 
 //-- When - Package
@@ -32,7 +33,7 @@ when.packageIsParsed = () => {
 
 //-- Then - Config
 then.packageNameShouldBeValid = () => {
-	expect(packageConfig.name).toMatch(/^@valtech-commerce\/eslint-config-(?<kebab1>[a-z][a-z0-9]*)(?<kebab2>-[a-z0-9]+)*$/u);
+	expect(packageConfig.name).toMatch(/^@valtech-commerce\/.+$/u);
 };
 
 then.packageKeywordsShouldBeValid = () => {

@@ -1,34 +1,174 @@
 {
-  "name": "eslint-config",
-  "private": true,
+  "name": "@valtech-commerce/eslint-config",
+  "version": "4.0.0-beta.2",
+  "description": "Valtech_Commerce ESLint configurations",
+  "definition": "",
+  "homepage": "https://github.com/valtech-commerce/eslint-config",
+  "author": {
+    "name": "Valtech Canada inc.",
+    "url": "https://www.valtech.ca/"
+  },
+  "keywords": [
+    "browser",
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "jest",
+    "jsdoc",
+    "json",
+    "magento",
+    "nwayo",
+    "optimizely",
+    "pwastudio",
+    "react",
+    "spire",
+    "test",
+    "typescript"
+  ],
+  "license": "MIT",
+  "repository": {
+    "url": "git://github.com/valtech-commerce/eslint-config.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/valtech-commerce/eslint-config/issues"
+  },
   "engines": {
-    "node": ">= 14.13.1"
+    "node": ">= 16"
+  },
+  "main": "src/config",
+  "exports": {
+    "./browser": "./src/config/browser.js",
+    "./core": "./src/config/core.js",
+    "./jest": "./src/config/jest.js",
+    "./jsdoc": "./src/config/jsdoc.js",
+    "./json": "./src/config/json.js",
+    "./node/module": "./src/config/node/module.js",
+    "./node/module/typescript": "./src/config/node/module/typescript.js",
+    "./node/script": "./src/config/node/script.js",
+    "./nwayo": "./src/config/nwayo.js",
+    "./pwastudio": "./src/config/pwastudio.js",
+    "./react": "./src/config/react.js",
+    "./spire": "./src/config/spire.js",
+    "./typescript": "./src/config/typescript.js"
   },
   "scripts": {
-    "manager:install": "node manager.mjs --task=install",
-    "manager:outdated": "node manager.mjs --task=outdated",
-    "manager:build": "node manager.mjs --task=build",
-    "manager:watch": "node manager.mjs --task=watch",
-    "manager:fix": "node manager.mjs --task=fix",
-    "manager:documentation": "node manager.mjs --task=documentation",
-    "manager:prepare": "node manager.mjs --task=prepare",
-    "manager:rebuild": "node manager.mjs --task=rebuild",
-    "manager:publish": "node manager.mjs --task=publish",
-    "manager:publish:unsafe": "node manager.mjs --task=publish:unsafe",
-    "test": "node test --scope=all",
-    "test:standards": "node test --scope=standards",
-    "test:unit": "node test --scope=unit",
-    "test:feature": "node test --scope=feature",
-    "test:integration": "node test --scope=integration",
-    "test:endtoend": "node test --scope=endtoend"
+    "test": "npm run lint && jest ./test/**",
+    "test:feature": "jest ./test/feature/**",
+    "test:standards": "jest ./test/standards/**",
+    "lint": "npm run lint:eslint && npm run lint:prettier",
+    "lint:prettier": "prettier --check .",
+    "lint:eslint": "eslint --report-unused-disable-directives .",
+		"fix": "npm run fix:prettier && npm run fix:eslint",
+		"fix:prettier": "prettier --write .",
+		"fix:eslint": "eslint --fix --ext .js ."
+  },
+  "jest": {
+    "setupFilesAfterEnv": ["jest-extended/all"]
   },
   "devDependencies": {
-    "@absolunet/fss": "1.7.0",
-    "@absolunet/manager": "3.0.0-beta.6",
-    "@absolunet/tester": "5.0.0-beta.5",
-    "deepmerge": "4.2.2"
+    "@babel/core": "7.20.12",
+    "@babel/eslint-parser": "7.19.1",
+    "@babel/preset-env": "^7.20.2",
+    "@typescript-eslint/eslint-plugin": "5.51.0",
+    "@typescript-eslint/parser": "5.51.0",
+    "eslint": "8.33.0",
+    "eslint-import-resolver-typescript": "3.5.3",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jest": "27.2.1",
+    "eslint-plugin-jsdoc": "39.8.0",
+    "eslint-plugin-json": "3.1.0",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-ordered-imports": "0.6.0",
+    "eslint-plugin-package-json": "0.1.4",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-unicorn": "45.0.2",
+    "jest": "^29.4.2",
+    "jest-extended": "^3.2.3",
+    "prettier": "^2.8.4",
+    "react": "18.2.0",
+    "typescript": "4.9.5"
   },
-  "workspaces": [
-    "packages/*"
-  ]
+  "dependencies": {
+    "@valtech-commerce/fss": "^1.7.0",
+    "deepmerge": "^4.3.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "8.6.0",
+    "pkg-dir": "^5.0.0"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/eslint-parser": "^7.19.1",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint": "^8.33.0",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-jsdoc": "^39.8.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-ordered-imports": "^0.6.0",
+    "eslint-plugin-package-json": "^0.1.4",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-unicorn": "^45.0.2",
+    "typescript": "^4.9.5"
+  },
+  "peerDependenciesMeta": {
+    "@babel/core": {
+      "optional": true
+    },
+    "@babel/eslint-parser": {
+      "optional": true
+    },
+    "@typescript-eslint/eslint-plugin": {
+      "optional": true
+    },
+    "@typescript-eslint/parser": {
+      "optional": true
+    },
+    "eslint-import-resolver-typescript": {
+      "optional": true
+    },
+    "eslint-plugin-import": {
+      "optional": true
+    },
+    "eslint-plugin-jest": {
+      "optional": true
+    },
+    "eslint-plugin-jsdoc": {
+      "optional": true
+    },
+    "eslint-plugin-json": {
+      "optional": true
+    },
+    "eslint-plugin-jsx-a11y": {
+      "optional": true
+    },
+    "eslint-plugin-node": {
+      "optional": true
+    },
+    "eslint-plugin-ordered-imports": {
+      "optional": true
+    },
+    "eslint-plugin-package-json": {
+      "optional": true
+    },
+    "eslint-plugin-react": {
+      "optional": true
+    },
+    "eslint-plugin-react-hooks": {
+      "optional": true
+    },
+    "eslint-plugin-unicorn": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    }
+  }
 }

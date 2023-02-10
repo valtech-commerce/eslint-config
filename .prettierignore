@@ -6,6 +6,4 @@
 !*.yml
 !*.md
 
-dist
-docs
 CHANGELOG.md

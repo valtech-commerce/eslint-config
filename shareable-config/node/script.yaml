@@ -1,0 +1,13 @@
+extends:
+  - "../../config/core"
+  - "plugin:node/recommended-script"
+
+rules:
+  strict: [error, global]
+
+  node/no-extraneous-import: [off]
+  node/no-missing-import: [off]
+  node/no-unpublished-import: [off]
+
+  unicorn/prefer-module: [off]
+  unicorn/prefer-node-protocol: [off]

@@ -1,0 +1,42 @@
+extends: "../config/browser"
+
+env:
+  jquery: true
+
+globals:
+  global: readonly
+
+  # nwayo
+  konstan: readonly
+  app: readonly
+  __: readonly
+  toolbox: readonly
+  PROJECT: readonly
+  DOM_PARSED: readonly
+  DOCUMENT_LOADED: readonly
+  GLOBAL_JQUERY_LOADED: readonly
+
+  # nwayo vendors
+  _: readonly
+  Modernizr: readonly
+  pinki: readonly
+
+  # Classic libs
+  addthis: readonly
+  addthis_config: writable
+  addthis_share: writable
+  Cookies: readonly
+  FastClick: readonly
+  Foundation: readonly
+  google: readonly
+  kafe: readonly
+  WebFont: readonly
+  whatInput: readonly
+
+rules:
+  no-console: [warn]
+  no-debugger: [warn]
+  no-alert: [warn]
+
+  unicorn/consistent-function-scoping: [off]
+  unicorn/no-unreadable-iife: [off]

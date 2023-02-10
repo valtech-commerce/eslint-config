@@ -1,2 +1,0 @@
-extends:
-  - "@valtech-commerce/eslint-config-test"

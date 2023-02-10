@@ -1,0 +1,11 @@
+extends: "../config/core"
+
+env:
+  browser: true
+
+rules:
+  strict: [error, function]
+  no-restricted-globals: [error, window]
+
+  unicorn/prevent-abbreviations: [error, { checkProperties: true, checkFilenames: false, allowList: { jQuery: true } }]
+  unicorn/require-post-message-target-origin: [error]

@@ -10,12 +10,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [Unreleased]
+### Changed
+- Switch from multi packages to single package with multiple entrypoints
+- Rename `test` ruleset to `jest`
 
 
 
 ## [4.0.0-beta.2] - 2022-12-21
 ### Added
-- `node`: Expose `@absolunet/eslint-config-node/module/typescript`
+- `node`: Expose `eslint-config-node/module/typescript`
 
 ### Changed
 - `node/module`: Deactivate `import/prefer-default-export`
@@ -29,9 +32,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [4.0.0-beta.1] - 2022-12-20
 ### Added
-- Create `@absolunet/eslint-config-typescript` - With TypeScript rules
-- `node`: Expose the default script/CommonJS version at `@absolunet/eslint-config-node/script`
-- `node`: Expose a module/ESM version at `@absolunet/eslint-config-node/module`
+- Create `eslint-config-typescript` - With TypeScript rules
+- `node`: Expose the default script/CommonJS version at `eslint-config-node/script`
+- `node`: Expose a module/ESM version at `eslint-config-node/module`
 
 ### Changed
 - `core`: Update to ESLint 8.30.0 / unicorn 45.0.2
@@ -39,7 +42,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `pwastudio`: Inherit config from `react` for `unicorn/prevent-abbreviations`
 - `react`: Update to JSX A11Y 6.6.1 / React 7.31.11 / Babel dependencies
 - `react`: Allow `ts` and `tsx` extensions
-- `spire`: Extend `@absolunet/eslint-config-typescript` instead of native TypeScript configuration
+- `spire`: Extend `eslint-config-typescript` instead of native TypeScript configuration
 - `test`: Update to Jest 27.1.7
 
 #### Base configurations on recommended rules
@@ -63,8 +66,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `test`: Reactivate `jest/no-alias-methods` as the methods themselves will be removed in the next major version of Jest
 
 ### Removed
-- Deprecate `@absolunet/eslint-config-node-package`
-- Deprecate `@absolunet/eslint-config-package`
+- Deprecate `eslint-config-node-package`
+- Deprecate `eslint-config-package`
 
 
 
@@ -137,7 +140,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Update to ESLint 8
-- `react`: Remove warning for the "Ref" abbreviation to be adjusted to "Reference" ([Issue #1](https://github.com/absolunet/eslint-config/issues/1))
+- `react`: Remove warning for the "Ref" abbreviation to be adjusted to "Reference" ([Issue #1](https://github.com/valtech-commerce/eslint-config/issues/1))
 - `react`: Add missing plugin in package README
 - Maintenance updates
 
@@ -231,9 +234,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [3.0.0-beta.1] - 2021-08-17
 ### Added
 - Add Prettier config as last overwrite for all config packages
-- Create `@absolunet/eslint-config-pwastudio` - With PWA Studio rules
-- Create `@absolunet/eslint-config-spire` - With Spire rules
-- Recover `@absolunet/eslint-loader` in this repository
+- Create `eslint-config-pwastudio` - With PWA Studio rules
+- Create `eslint-config-spire` - With Spire rules
+- Recover `eslint-loader` in this repository
 
 ### Changed
 - Remove `core` rules treated by Prettier
@@ -312,10 +315,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.0.0] - 2021-01-22
 ### Added
-- Create `@absolunet/eslint-config-node-package` - With Node.js package rules
+- Create `eslint-config-node-package` - With Node.js package rules
 
 ### Changed
-- Moved `no-restricted-properties` from `@absolunet/eslint-config-node` to `@absolunet/eslint-config-core`
+- Moved `no-restricted-properties` from `eslint-config-node` to `eslint-config-core`
 - Maintenance updates
 
 #### Update to ESLint 7.18.0
@@ -468,7 +471,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.4.4] - 2019-11-01
 ### Added
-- Create `@absolunet/eslint-config-json` - With JSON rules
+- Create `eslint-config-json` - With JSON rules
 
 ### Changed
 - Update JSDoc (jsdoc) to 17.0.0
@@ -477,11 +480,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.4.3] - 2019-10-31
 ### Added
-- In `@absolunet/eslint-config-nwayo` add `whatInput` as a global variable
+- In `eslint-config-nwayo` add `whatInput` as a global variable
 
 ### Changed
 - Switch `function-paren-newline` to `multiline` for more flexibility
-- In `@absolunet/eslint-config-nwayo` disable `unicorn/consistent-function-scoping` because it conflicts with nwayo's architecture
+- In `eslint-config-nwayo` disable `unicorn/consistent-function-scoping` because it conflicts with nwayo's architecture
 - Update Jest (test) to 23.0.2
 - Maintenance updates
 
@@ -493,7 +496,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enable 'jsdoc' mode
 
 ### Fixed
-- In `@absolunet/eslint-config-react` disable `unicorn/prevent-abbreviations` on filenames like in version 1.4.1
+- In `eslint-config-react` disable `unicorn/prevent-abbreviations` on filenames like in version 1.4.1
 
 
 
@@ -511,7 +514,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.4.1] - 2019-10-11
 ### Changed
 - Update to Unicorn 12.0.2
-- Convert all warnings in `@absolunet/eslint-config-core` in errors and moved them in sub configs
+- Convert all warnings in `eslint-config-core` in errors and moved them in sub configs
 - Maintenance updates
 
 ### Fixed
@@ -537,10 +540,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `unicorn/prefer-string-slice`
 - Upgrade `unicorn/no-abusive-eslint-disable` from warning to error
 
-#### @absolunet/eslint-config-browser
+#### eslint-config-browser
 - Add `unicorn/prefer-dataset`
 
-#### @absolunet/eslint-config-package
+#### eslint-config-package
 - Add `unicorn/expiring-todo-comments`
 
 #### Dependencies updates
@@ -562,7 +565,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Airbnb (react) to 18.0.1
 - Jest (test) to 22.16.0
 
-#### @absolunet/eslint-config-test
+#### eslint-config-test
 - Now validates with ESM
 
 #### Relaxed rules
@@ -572,22 +575,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.4.0-beta.2] - 2019-08-09
 ### Added
-- Create @absolunet/eslint-config-test - With Jest rules
+- Create eslint-config-test - With Jest rules
 
 
 
 ## [1.4.0-beta.1] - 2019-08-05
 ### Added
-- Create `@absolunet/eslint-config-jsdoc`
-- Create `@absolunet/eslint-config-package`
+- Create `eslint-config-jsdoc`
+- Create `eslint-config-package`
 
 ### Removed
-- Delete `@absolunet/eslint-config-library`
+- Delete `eslint-config-library`
 
 ### Changed
-- `@absolunet/eslint-config-react` now depends on `eslint-config-airbnb`
-- `@absolunet/eslint-config-browser` doesn't include jQuery environment anymore
-- `@absolunet/eslint-config-nwayo` includes jQuery environment directly
+- `eslint-config-react` now depends on `eslint-config-airbnb`
+- `eslint-config-browser` doesn't include jQuery environment anymore
+- `eslint-config-nwayo` includes jQuery environment directly
 
 #### Update to ESLint 6.1.0
 - Ajust some rules to keep linting the same
@@ -605,7 +608,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.3.0] - 2019-03-28
 ### Added
-- Create `@absolunet/eslint-config-browser`
+- Create `eslint-config-browser`
 - Add an abstraction to nwayo config
 
 ### Changed
