@@ -10,6 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [Unreleased]
+
+
+
+## [4.0.0-rc.1] - 2023-02-13
 ### Changed
 - Switch from multi packages to single package with multiple entrypoints
 - Rename `test` ruleset to `jest`
@@ -712,7 +716,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-[Unreleased]:   https://github.com/valtech-commerce/eslint-config/compare/4.0.0-beta.2...HEAD
+[Unreleased]:   https://github.com/valtech-commerce/eslint-config/compare/4.0.0-rc.1...HEAD
+[4.0.0-rc.1]:   https://github.com/valtech-commerce/eslint-config/compare/4.0.0-beta.2...4.0.0-rc.1
 [4.0.0-beta.2]: https://github.com/valtech-commerce/eslint-config/compare/4.0.0-beta.1...4.0.0-beta.2
 [4.0.0-beta.1]: https://github.com/valtech-commerce/eslint-config/compare/3.2.2...4.0.0-beta.1
 [3.2.2]:        https://github.com/valtech-commerce/eslint-config/compare/3.2.1...3.2.2
