@@ -61,7 +61,8 @@
     "lint:eslint": "eslint --report-unused-disable-directives .",
 		"fix": "npm run fix:prettier && npm run fix:eslint",
 		"fix:prettier": "prettier --write .",
-		"fix:eslint": "eslint --fix --ext .js ."
+		"fix:eslint": "eslint --fix --ext .js .",
+		"script:fixtures": "node ./test/utils/generate-fixtures.js"
   },
   "jest": {
     "setupFilesAfterEnv": ["jest-extended/all"]
@@ -89,10 +90,11 @@
     "jest-extended": "^3.2.3",
     "prettier": "^2.8.4",
     "react": "18.2.0",
+    "sort-json": "^2.0.1",
     "typescript": "4.9.5"
   },
   "dependencies": {
-    "@valtech-commerce/fss": "^1.7.0",
+    "@valtech-commerce/fs": "^1.7.0",
     "deepmerge": "^4.3.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-prettier": "8.6.0",

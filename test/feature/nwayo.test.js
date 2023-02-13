@@ -1,7 +1,7 @@
 //--------------------------------------------------------
 //-- nwayo - Feature tests
 //--------------------------------------------------------
-import configTests from "../utils/config";
+import configTests from "../config";
 import { given, when, then } from "./nwayo.gwt";
 
 describe(`Validate that 'nwayo' works`, () => {

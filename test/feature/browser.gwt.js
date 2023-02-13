@@ -1,7 +1,7 @@
 //--------------------------------------------------------
 //-- browser - Given-When-Then
 //--------------------------------------------------------
-import * as gwt from "../utils/config.gwt";
+import * as gwt from "../config.gwt";
 
 const given = { ...gwt.given };
 const when = { ...gwt.when };

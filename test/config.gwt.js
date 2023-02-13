@@ -52,7 +52,7 @@ given.currentExtraConfig = () => {
 //-- When - Config
 when.configIsLoaded = () => {
 	when.attempting(() => {
-		configPath = path.join(__dirname, "..", "..", "src", "config", ruleset);
+		configPath = path.join(__dirname, "..", "src", "config", ruleset);
 		config = require(configPath);
 	});
 };

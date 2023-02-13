@@ -1,7 +1,7 @@
 //--------------------------------------------------------
 //-- core - Feature tests
 //--------------------------------------------------------
-import configTests from "../utils/config";
+import configTests from "../config";
 import { given, when, then } from "./core.gwt";
 
 describe(`Validate that 'core' works`, () => {

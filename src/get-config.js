@@ -2,7 +2,7 @@
 //-- Read and process shareable config
 //--------------------------------------------------------
 const path = require("node:path");
-const fss = require("@valtech-commerce/fss");
+const { fsSync } = require("@valtech-commerce/fs");
 const deepMerge = require("deepmerge");
 const prettierConfig = require("eslint-config-prettier");
 const pkgDir = require("pkg-dir");
@@ -11,7 +11,7 @@ module.exports = (...paths) => {
 	const shareableConfig = paths.reduce((config, filePath) => {
 		const filePaths = filePath.split("/");
 		const filename = filePaths.pop();
-		const current = fss.readYaml(
+		const current = fsSync.readYaml(
 			path.join(pkgDir.sync(__dirname), "shareable-config", ...filePaths, `${filename}.yaml`)
 		);
 

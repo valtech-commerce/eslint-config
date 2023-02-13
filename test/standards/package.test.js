@@ -21,4 +21,10 @@ describe(`Validate package.json`, () => {
 		when.packageIsParsed();
 		then.packageKeywordsShouldBeValid();
 	});
+
+	test(`Ensure exports endpoints exist`, () => {
+		given.root();
+		when.packageIsParsed();
+		then.packageExportsShouldExist();
+	});
 });

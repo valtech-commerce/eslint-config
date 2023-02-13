@@ -2,8 +2,8 @@
 //-- Standards - Given-When-Then
 //--------------------------------------------------------
 import path from "node:path";
-import fss from "@valtech-commerce/fss";
-import * as gwt from "../utils/base.gwt";
+import { fsSync } from "@valtech-commerce/fs";
+import * as gwt from "../base.gwt";
 
 const given = { ...gwt.given };
 const when = { ...gwt.when };
@@ -28,7 +28,7 @@ given.root = () => {
 
 //-- When - Package
 when.packageIsParsed = () => {
-	packageConfig = fss.readJson(`${root}/package.json`);
+	packageConfig = fsSync.readJson(path.join(root, "package.json"));
 };
 
 //-- Then - Config
@@ -38,6 +38,12 @@ then.packageNameShouldBeValid = () => {
 
 then.packageKeywordsShouldBeValid = () => {
 	expect(packageConfig.keywords).toIncludeAllMembers(["eslint", "eslintconfig", "eslint-config"]);
+};
+
+then.packageExportsShouldExist = () => {
+	Object.values(packageConfig.exports).forEach((file) => {
+		expect(fsSync.exists(path.join(root, file))).toBeTrue();
+	});
 };
 
 export { given, when, then };
