@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `react`: Deactivate `react/jsx-props-no-spreading` rule
 - `react`: Remove `eslint-plugin-ordered-imports`
 - `react`: Remove `ts` and `tsx` extension support
+- Maintenance updates
 
 
 
