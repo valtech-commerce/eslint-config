@@ -35,7 +35,6 @@
     "jsx-a11y",
     "react-hooks",
     "unicorn",
-    "ordered-imports",
     "package-json"
   ],
   "rules": {
@@ -420,7 +419,7 @@
       "error"
     ],
     "import/exports-last": [
-      "off"
+      "error"
     ],
     "import/extensions": [
       "error",
@@ -435,7 +434,7 @@
       "error"
     ],
     "import/group-exports": [
-      "off"
+      "error"
     ],
     "import/imports-first": [
       "off"
@@ -487,7 +486,7 @@
       "off"
     ],
     "import/no-deprecated": [
-      "off"
+      "warn"
     ],
     "import/no-duplicates": [
       "error"
@@ -553,7 +552,7 @@
       "off"
     ],
     "import/no-namespace": [
-      "off"
+      "error"
     ],
     "import/no-nodejs-modules": [
       "off"
@@ -1915,43 +1914,6 @@
         }
       }
     ],
-    "ordered-imports/ordered-imports": [
-      "error",
-      {
-        "declaration-ordering": [
-          "name",
-          "case-insensitive"
-        ],
-        "group-ordering": [
-          {
-            "match": "^react",
-            "name": "react",
-            "order": 10
-          },
-          {
-            "match": "^@",
-            "name": "project root",
-            "order": 30
-          },
-          {
-            "match": "^\\.\\.",
-            "name": "parent directories",
-            "order": 40
-          },
-          {
-            "match": "^\\.",
-            "name": "current directory",
-            "order": 50
-          },
-          {
-            "match": ".*",
-            "name": "third-party",
-            "order": 20
-          }
-        ],
-        "specifier-ordering": "case-insensitive"
-      }
-    ],
     "package-json/order-properties": [
       "warn"
     ],
@@ -2198,9 +2160,7 @@
       {
         "extensions": [
           ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
+          ".jsx"
         ]
       }
     ],

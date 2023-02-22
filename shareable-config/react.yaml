@@ -7,12 +7,11 @@ parser: "@babel/eslint-parser"
 parserOptions:
   sourceType: module
 
-plugins:
-  # - import       # (From airbnb)
-  # - jsx-a11y     # (From airbnb)
-  - ordered-imports
-  # - react        # (From airbnb)
-  # - react-hooks  # (From airbnb)
+#plugins:
+# - import       # (From airbnb)
+# - jsx-a11y     # (From airbnb)
+# - react        # (From airbnb)
+# - react-hooks  # (From airbnb)
 
 # Rules
 rules:
@@ -38,8 +37,14 @@ rules:
     - extensions:
         - .js
         - .jsx
-        - .ts
-        - .tsx
+
+  # Prop spreading should be allowed on components
+  react/jsx-props-no-spreading: [off]
+
+  import/exports-last: [error]
+  import/group-exports: [error]
+  import/no-deprecated: [warn]
+  import/no-namespace: [error]
 
   # Enforce a convention in module import order
   # https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/order.md
@@ -58,31 +63,6 @@ rules:
           position: before
       pathGroupsExcludedImportTypes:
         - react
-
-  # Ordered Imports
-  # https://github.com/KyleMayes/eslint-plugin-ordered-imports/blob/master/README.md
-  ordered-imports/ordered-imports:
-    - error
-    - declaration-ordering:
-        - name
-        - case-insensitive
-      specifier-ordering: case-insensitive
-      group-ordering:
-        - name: react
-          match: ^react
-          order: 10
-        - name: project root
-          match: ^@
-          order: 30
-        - name: parent directories
-          match: ^\.\.
-          order: 40
-        - name: current directory
-          match: ^\.
-          order: 50
-        - name: third-party
-          match: .*
-          order: 20
 
   # Enforces where React component static properties should be positioned
   # https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/static-property-placement.md

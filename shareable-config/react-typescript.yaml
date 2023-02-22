@@ -1,0 +1,22 @@
+extends:
+  - "../config/react"
+  - "plugin:import/typescript"
+  - "../config/typescript"
+
+settings:
+  import/resolver:
+    typescript:
+      alwaysTryTypes: true
+
+rules:
+  # No extensions in TypeScript
+  import/extensions: [off]
+
+  # Support TypeScript extensions
+  react/jsx-filename-extension:
+    - error
+    - extensions:
+        - .js
+        - .jsx
+        - .ts
+        - .tsx

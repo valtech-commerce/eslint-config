@@ -38,7 +38,7 @@
       "error"
     ],
     "@typescript-eslint/await-thenable": [
-      "off"
+      "error"
     ],
     "@typescript-eslint/ban-ts-comment": [
       "error"
@@ -53,12 +53,6 @@
       "off"
     ],
     "@typescript-eslint/comma-spacing": [
-      "off"
-    ],
-    "@typescript-eslint/consistent-type-assertions": [
-      "off"
-    ],
-    "@typescript-eslint/explicit-function-return-type": [
       "off"
     ],
     "@typescript-eslint/func-call-spacing": [
@@ -77,13 +71,13 @@
       "error"
     ],
     "@typescript-eslint/no-empty-function": [
-      "off"
+      "error"
     ],
     "@typescript-eslint/no-empty-interface": [
-      "off"
+      "error"
     ],
     "@typescript-eslint/no-explicit-any": [
-      "off"
+      "warn"
     ],
     "@typescript-eslint/no-extra-non-null-assertion": [
       "error"
@@ -95,13 +89,13 @@
       "off"
     ],
     "@typescript-eslint/no-floating-promises": [
-      "off"
+      "error"
     ],
     "@typescript-eslint/no-for-in-array": [
-      "off"
+      "error"
     ],
     "@typescript-eslint/no-implied-eval": [
-      "off"
+      "error"
     ],
     "@typescript-eslint/no-inferrable-types": [
       "error"
@@ -113,7 +107,7 @@
       "error"
     ],
     "@typescript-eslint/no-misused-promises": [
-      "off"
+      "error"
     ],
     "@typescript-eslint/no-namespace": [
       "error"
@@ -122,40 +116,34 @@
       "error"
     ],
     "@typescript-eslint/no-non-null-assertion": [
-      "off"
+      "warn"
     ],
     "@typescript-eslint/no-this-alias": [
-      "off"
+      "error"
     ],
     "@typescript-eslint/no-unnecessary-type-assertion": [
-      "off"
+      "error"
     ],
     "@typescript-eslint/no-unnecessary-type-constraint": [
       "error"
     ],
     "@typescript-eslint/no-unsafe-argument": [
-      "off"
+      "error"
     ],
     "@typescript-eslint/no-unsafe-assignment": [
-      "off"
+      "error"
     ],
     "@typescript-eslint/no-unsafe-call": [
-      "off"
+      "error"
     ],
     "@typescript-eslint/no-unsafe-member-access": [
-      "off"
+      "error"
     ],
     "@typescript-eslint/no-unsafe-return": [
-      "off"
-    ],
-    "@typescript-eslint/no-unused-expressions": [
-      "off"
+      "error"
     ],
     "@typescript-eslint/no-unused-vars": [
-      "off"
-    ],
-    "@typescript-eslint/no-use-before-define": [
-      "off"
+      "warn"
     ],
     "@typescript-eslint/no-var-requires": [
       "error"
@@ -173,13 +161,13 @@
       0
     ],
     "@typescript-eslint/require-await": [
-      "off"
+      "error"
     ],
     "@typescript-eslint/restrict-plus-operands": [
-      "off"
+      "error"
     ],
     "@typescript-eslint/restrict-template-expressions": [
-      "off"
+      "error"
     ],
     "@typescript-eslint/semi": [
       "off"
@@ -194,20 +182,20 @@
       "off"
     ],
     "@typescript-eslint/strict-boolean-expressions": [
-      "off",
+      2,
       {
         "allowNumber": false,
         "allowString": false
       }
     ],
     "@typescript-eslint/triple-slash-reference": [
-      "off"
+      "error"
     ],
     "@typescript-eslint/type-annotation-spacing": [
       "off"
     ],
     "@typescript-eslint/unbound-method": [
-      "off"
+      "error"
     ],
     "accessor-pairs": [
       "error"
@@ -235,7 +223,7 @@
       }
     ],
     "arrow-body-style": [
-      "off",
+      "error",
       "as-needed",
       {
         "requireReturnForObjectLiteral": false
@@ -372,7 +360,7 @@
       "never"
     ],
     "consistent-return": [
-      "off"
+      "error"
     ],
     "consistent-this": [
       "error",
@@ -386,7 +374,7 @@
       "multi-line"
     ],
     "default-case": [
-      "off",
+      "error",
       {
         "commentPattern": "^no default$"
       }
@@ -402,7 +390,7 @@
       "property"
     ],
     "dot-notation": [
-      "off",
+      "error",
       {
         "allowKeywords": true,
         "allowPattern": ""
@@ -465,7 +453,7 @@
       }
     ],
     "func-names": [
-      "off",
+      "error",
       "never"
     ],
     "func-style": [
@@ -504,7 +492,7 @@
       "getBeforeSet"
     ],
     "guard-for-in": [
-      "off"
+      "error"
     ],
     "handle-callback-err": [
       "off"
@@ -533,7 +521,7 @@
       }
     ],
     "import/export": [
-      "off"
+      "error"
     ],
     "import/exports-last": [
       "error"
@@ -548,7 +536,7 @@
       }
     ],
     "import/first": [
-      "off"
+      "error"
     ],
     "import/group-exports": [
       "error"
@@ -563,7 +551,7 @@
       }
     ],
     "import/named": [
-      "error"
+      "off"
     ],
     "import/namespace": [
       "off"
@@ -612,7 +600,7 @@
       "error"
     ],
     "import/no-extraneous-dependencies": [
-      "off",
+      "error",
       {
         "devDependencies": [
           "test/**",
@@ -654,7 +642,7 @@
       }
     ],
     "import/no-mutable-exports": [
-      "off"
+      "error"
     ],
     "import/no-named-as-default": [
       "error"
@@ -690,7 +678,7 @@
       "off"
     ],
     "import/no-unresolved": [
-      "off",
+      "error",
       {
         "caseSensitive": true,
         "caseSensitiveStrict": false,
@@ -715,7 +703,7 @@
       "error"
     ],
     "import/order": [
-      "off",
+      "error",
       {
         "distinctGroup": true,
         "groups": [
@@ -740,7 +728,7 @@
       }
     ],
     "import/prefer-default-export": [
-      "off"
+      "error"
     ],
     "import/unambiguous": [
       "off"
@@ -820,7 +808,7 @@
       }
     ],
     "jsx-a11y/anchor-is-valid": [
-      "off",
+      "error",
       {
         "aspects": [
           "noHref",
@@ -860,10 +848,10 @@
       }
     ],
     "jsx-a11y/click-events-have-key-events": [
-      "off"
+      "error"
     ],
     "jsx-a11y/control-has-associated-label": [
-      "off",
+      "error",
       {
         "controlComponents": [],
         "depth": 5,
@@ -902,10 +890,10 @@
       }
     ],
     "jsx-a11y/html-has-lang": [
-      "off"
+      "error"
     ],
     "jsx-a11y/iframe-has-title": [
-      "off"
+      "error"
     ],
     "jsx-a11y/img-redundant-alt": [
       "error"
@@ -914,7 +902,7 @@
       "error"
     ],
     "jsx-a11y/label-has-associated-control": [
-      "off",
+      "error",
       {
         "assert": "both",
         "controlComponents": [],
@@ -948,7 +936,7 @@
       }
     ],
     "jsx-a11y/mouse-events-have-key-events": [
-      "off"
+      "error"
     ],
     "jsx-a11y/no-access-key": [
       "error"
@@ -978,7 +966,7 @@
       }
     ],
     "jsx-a11y/no-noninteractive-element-interactions": [
-      "off",
+      "error",
       {
         "handlers": [
           "onClick",
@@ -1042,7 +1030,7 @@
       "error"
     ],
     "jsx-a11y/no-static-element-interactions": [
-      "off",
+      "error",
       {
         "handlers": [
           "onClick",
@@ -1118,7 +1106,7 @@
       }
     ],
     "lines-between-class-members": [
-      "off",
+      "error",
       "always",
       {
         "exceptAfterSingleLine": true
@@ -1225,7 +1213,7 @@
       "error"
     ],
     "no-await-in-loop": [
-      "off"
+      "error"
     ],
     "no-bitwise": [
       "error"
@@ -1278,7 +1266,7 @@
       "error"
     ],
     "no-continue": [
-      "off"
+      "error"
     ],
     "no-control-regex": [
       "error"
@@ -1442,7 +1430,7 @@
       "error"
     ],
     "no-loop-func": [
-      "off"
+      "error"
     ],
     "no-loss-of-precision": [
       "off"
@@ -1516,7 +1504,7 @@
       "off"
     ],
     "no-multi-assign": [
-      "off"
+      "error"
     ],
     "no-multi-spaces": [
       "off",
@@ -1581,7 +1569,7 @@
       "error"
     ],
     "no-param-reassign": [
-      "off",
+      "error",
       {
         "ignorePropertyModificationsFor": [
           "acc",
@@ -1748,7 +1736,7 @@
       "error"
     ],
     "no-shadow": [
-      "off",
+      "error",
       {
         "builtinGlobals": false,
         "hoist": "all",
@@ -1854,7 +1842,7 @@
       }
     ],
     "no-unused-expressions": [
-      "off",
+      "error",
       {
         "allowShortCircuit": false,
         "allowTaggedTemplates": false,
@@ -1901,7 +1889,7 @@
       "error"
     ],
     "no-useless-escape": [
-      "off"
+      "error"
     ],
     "no-useless-rename": [
       "error",
@@ -1915,7 +1903,7 @@
       "error"
     ],
     "no-var": [
-      "warn"
+      "error"
     ],
     "no-void": [
       "error"
@@ -1990,7 +1978,7 @@
       }
     ],
     "one-var": [
-      "warn",
+      "error",
       "never"
     ],
     "one-var-declaration-per-line": [
@@ -1998,7 +1986,7 @@
       "always"
     ],
     "operator-assignment": [
-      "off",
+      "error",
       "always"
     ],
     "operator-linebreak": [
@@ -2008,16 +1996,6 @@
         "overrides": {
           "=": "none"
         }
-      }
-    ],
-    "ordered-imports/ordered-imports": [
-      "warn",
-      {
-        "declaration-ordering": [
-          "source",
-          "case-insensitive"
-        ],
-        "specifier-ordering": "case-insensitive"
       }
     ],
     "padded-blocks": [
@@ -2059,7 +2037,7 @@
       }
     ],
     "prefer-destructuring": [
-      "off",
+      "error",
       {
         "array": true,
         "object": true
@@ -2127,10 +2105,10 @@
       "error"
     ],
     "react-hooks/exhaustive-deps": [
-      "off"
+      "error"
     ],
     "react-hooks/rules-of-hooks": [
-      "off"
+      "error"
     ],
     "react/boolean-prop-naming": [
       "off",
@@ -2144,7 +2122,7 @@
       }
     ],
     "react/button-has-type": [
-      "off",
+      "error",
       {
         "button": true,
         "reset": false,
@@ -2158,7 +2136,7 @@
       }
     ],
     "react/destructuring-assignment": [
-      "off",
+      "error",
       "always"
     ],
     "react/display-name": [
@@ -2214,7 +2192,7 @@
       }
     ],
     "react/jsx-boolean-value": [
-      "off",
+      "error",
       "never",
       {
         "always": []
@@ -2256,11 +2234,13 @@
       "never"
     ],
     "react/jsx-filename-extension": [
-      "off",
+      "error",
       {
         "extensions": [
           ".js",
-          ".jsx"
+          ".jsx",
+          ".ts",
+          ".tsx"
         ]
       }
     ],
@@ -2433,7 +2413,7 @@
       }
     ],
     "react/no-access-state-in-setstate": [
-      "off"
+      "error"
     ],
     "react/no-adjacent-inline-elements": [
       "off"
@@ -2499,7 +2479,7 @@
       "error"
     ],
     "react/no-unescaped-entities": [
-      "off"
+      "error"
     ],
     "react/no-unknown-property": [
       "error"
@@ -2521,7 +2501,7 @@
       }
     ],
     "react/no-unused-state": [
-      "off"
+      "error"
     ],
     "react/no-will-update-set-state": [
       "error"
@@ -2543,7 +2523,7 @@
       }
     ],
     "react/prop-types": [
-      "off",
+      "error",
       {
         "customValidators": [],
         "ignore": [],
@@ -2569,10 +2549,10 @@
       "error"
     ],
     "react/self-closing-comp": [
-      "off"
+      "error"
     ],
     "react/sort-comp": [
-      "off",
+      "error",
       {
         "groups": {
           "lifecycle": [
@@ -2633,7 +2613,7 @@
       }
     ],
     "react/state-in-constructor": [
-      "off",
+      "error",
       "always"
     ],
     "react/static-property-placement": [
@@ -2647,7 +2627,7 @@
       "error"
     ],
     "require-atomic-updates": [
-      "off"
+      "error"
     ],
     "require-await": [
       "off"
@@ -3171,7 +3151,7 @@
       }
     ],
     "vars-on-top": [
-      "off"
+      "error"
     ],
     "vue/array-bracket-newline": [
       "off"
@@ -3308,21 +3288,36 @@
   "settings": {
     "import/core-modules": [],
     "import/extensions": [
+      ".ts",
+      ".tsx",
       ".js",
-      ".mjs",
       ".jsx"
+    ],
+    "import/external-module-folders": [
+      "node_modules",
+      "node_modules/@types"
     ],
     "import/ignore": [
       "node_modules",
       "\\.(coffee|scss|css|less|hbs|svg|json)$"
     ],
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
+    },
     "import/resolver": {
       "node": {
         "extensions": [
+          ".ts",
+          ".tsx",
           ".js",
-          ".jsx",
-          ".json"
+          ".jsx"
         ]
+      },
+      "typescript": {
+        "alwaysTryTypes": true
       }
     },
     "propWrapperFunctions": [
@@ -3332,7 +3327,7 @@
     ],
     "react": {
       "pragma": "React",
-      "version": "16.10"
+      "version": "detect"
     }
   }
 }

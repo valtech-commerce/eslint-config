@@ -10,6 +10,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [Unreleased]
+### Added
+- Add `react/typescript` entrypoint
+
+### Changed
+- `react`: Activate `import/exports-last` rule
+- `react`: Activate `import/group-exports` rule
+- `react`: Activate `import/no-deprecated` rule
+- `react`: Activate `import/no-namespace` rule
+- `react`: Deactivate `react/jsx-props-no-spreading` rule
+- `react`: Remove `eslint-plugin-ordered-imports`
+- `react`: Remove `ts` and `tsx` extension support
 
 
 

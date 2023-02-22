@@ -21,6 +21,7 @@
 | [browser](shareable-config/browser.yaml)                               | Browser rules                                                                    |
 | [nwayo](shareable-config/nwayo.yaml)                                   | [nwayo](https://valtech-commerce.github.io/nwayo/) rules                         |
 | [react](shareable-config/react.yaml)                                   | React rules                                                                      |
+| [react/typescript](shareable-config/react-typescript.yaml)             | React rules using TypeScript                                                     |
 | [jsdoc](shareable-config/jsdoc.yaml)                                   | JSDoc rules                                                                      |
 | [json](shareable-config/json.yaml)                                     | JSON rules                                                                       |
 | [pwastudio](shareable-config/pwastudio.yaml)                           | [PWA Studio](https://pwastudio.io) rules                                         |
@@ -30,13 +31,13 @@
 
 ```mermaid
   graph TD;
-    core --> browser & node/script & node/module & node/module/typescript
+    core --> browser & node/script & node/module
       browser --> nwayo & react
-        react --> pwastudio & spire
-      node/module --> jest
+        react --> pwastudio & spire & react/typescript
+      node/module --> jest & node/module/typescript
     jsdoc
     json
-    typescript
+    typescript --> react/typescript
 ```
 
 ## Install

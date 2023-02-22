@@ -7,7 +7,7 @@ import {
 	given as givenException,
 	when as whenException,
 	then as thenException,
-} from "@valtech-commerce/jest-gwt/exception";
+} from "@valtech-commerce/jest-gwt/exception"; // eslint-disable-line node/no-missing-import
 
 const given = { ...givenException };
 const when = { ...whenException };
