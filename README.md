@@ -1,4 +1,4 @@
-# ESLint config
+# @valtech-commerce/eslint-config
 
 [![npm][npm-badge]][npm-url]
 [![npms.io: Score][npmsio-badge]][npmsio-url]

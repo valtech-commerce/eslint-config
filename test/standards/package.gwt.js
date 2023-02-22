@@ -2,48 +2,23 @@
 //-- Standards - Given-When-Then
 //--------------------------------------------------------
 import path from "node:path";
-import { fsSync } from "@valtech-commerce/fs";
-import * as gwt from "../base.gwt";
+import { given as givenPackage, when as whenPackage, then as thenPackage } from "@valtech-commerce/jest-gwt/package";
 
-const given = { ...gwt.given };
-const when = { ...gwt.when };
-const then = { ...gwt.then };
+const given = { ...givenPackage };
+const when = { ...whenPackage };
+const then = { ...thenPackage };
 
-let root;
-let packageConfig;
-
-//-- Given - Reset
-given.noRoot = () => {
-	root = undefined;
+//-- Given - Current
+given.currentRoot = () => {
+	given.packageRoot(path.join(__dirname, "..", ".."));
 };
 
-given.noPackage = () => {
-	packageConfig = undefined;
+given.currentNamePattern = () => {
+	given.packageNamePattern(/^@valtech-commerce\/.+$/u);
 };
 
-//-- Given - Root
-given.root = () => {
-	root = path.join(__dirname, "..", "..");
-};
-
-//-- When - Package
-when.packageIsParsed = () => {
-	packageConfig = fsSync.readJson(path.join(root, "package.json"));
-};
-
-//-- Then - Config
-then.packageNameShouldBeValid = () => {
-	expect(packageConfig.name).toMatch(/^@valtech-commerce\/.+$/u);
-};
-
-then.packageKeywordsShouldBeValid = () => {
-	expect(packageConfig.keywords).toIncludeAllMembers(["eslint", "eslintconfig", "eslint-config"]);
-};
-
-then.packageExportsShouldExist = () => {
-	Object.values(packageConfig.exports).forEach((file) => {
-		expect(fsSync.exists(path.join(root, file))).toBeTrue();
-	});
+given.currentKeywords = () => {
+	given.packageKeywords(["eslint", "eslintconfig", "eslint-config"]);
 };
 
 export { given, when, then };

@@ -3,11 +3,15 @@
 //--------------------------------------------------------
 import path from "node:path";
 import deepmerge from "deepmerge";
-import { given as baseGiven, when as baseWhen, then as baseThen } from "./base.gwt.js";
+import {
+	given as givenException,
+	when as whenException,
+	then as thenException,
+} from "@valtech-commerce/jest-gwt/exception";
 
-const given = { ...baseGiven };
-const when = { ...baseWhen };
-const then = { ...baseThen };
+const given = { ...givenException };
+const when = { ...whenException };
+const then = { ...thenException };
 
 const { ESLint } = require("eslint");
 
