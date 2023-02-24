@@ -37,7 +37,7 @@
       node/module --> jest & node/module/typescript
     jsdoc
     json
-    typescript --> react/typescript
+    typescript
 ```
 
 ## Install

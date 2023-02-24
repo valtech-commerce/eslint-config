@@ -1,7 +1,6 @@
 extends:
   - "../config/react"
   - "plugin:import/typescript"
-  - "../config/typescript"
 
 settings:
   import/resolver:
