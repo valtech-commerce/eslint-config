@@ -16,12 +16,7 @@
     "jest",
     "jsdoc",
     "json",
-    "magento",
-    "nwayo",
-    "optimizely",
-    "pwastudio",
     "react",
-    "spire",
     "test",
     "typescript"
   ],
@@ -46,11 +41,8 @@
     "./node/module": "./src/config/node/module.js",
     "./node/module/typescript": "./src/config/node/module/typescript.js",
     "./node/script": "./src/config/node/script.js",
-    "./nwayo": "./src/config/nwayo.js",
-    "./pwastudio": "./src/config/pwastudio.js",
     "./react": "./src/config/react.js",
     "./react/typescript": "./src/config/react-typescript.js",
-    "./spire": "./src/config/spire.js",
     "./typescript": "./src/config/typescript.js"
   },
   "scripts": {
@@ -114,7 +106,6 @@
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-package-json": "^0.1.4",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-unicorn": "^45.0.2",

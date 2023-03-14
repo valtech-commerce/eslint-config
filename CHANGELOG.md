@@ -29,6 +29,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `react`: Remove `ts` and `tsx` extension support
 - Maintenance updates
 
+### Removed
+- Remove `nwayo`
+- Remove `pwastudio`
+- Remove `spire`
+
 
 
 ## [4.0.0-rc.2] - 2023-02-13

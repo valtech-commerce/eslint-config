@@ -10,30 +10,27 @@
 
 ## Rulesets
 
-| Ruleset                                                                | Description                                                                      |
-| ---------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| **[core](shareable-config/core.yaml)**                                 | **Core rules**                                                                   |
-| [typescript](shareable-config/typescript.yaml)                         | TypeScript rules                                                                 |
-| [node/script](shareable-config/node/script.yaml)                       | Node.js rules in "script" mode                                                   |
-| [node/module](shareable-config/node/module.yaml)                       | Node.js rules in "module" mode                                                   |
-| [node/module/typescript](shareable-config/node/module-typescript.yaml) | Node.js rules in "module" mode using TypeScript                                  |
-| [jest](shareable-config/jest.yaml)                                     | Jest rules                                                                       |
-| [browser](shareable-config/browser.yaml)                               | Browser rules                                                                    |
-| [nwayo](shareable-config/nwayo.yaml)                                   | [nwayo](https://valtech-commerce.github.io/nwayo/) rules                         |
-| [react](shareable-config/react.yaml)                                   | React rules                                                                      |
-| [react/typescript](shareable-config/react-typescript.yaml)             | React rules using TypeScript                                                     |
-| [jsdoc](shareable-config/jsdoc.yaml)                                   | JSDoc rules                                                                      |
-| [json](shareable-config/json.yaml)                                     | JSON rules                                                                       |
-| [pwastudio](shareable-config/pwastudio.yaml)                           | [PWA Studio](https://pwastudio.io) rules                                         |
-| [spire](shareable-config/spire.yaml)                                   | [Spire](https://www.optimizely.com/products/monetize/configured-commerce/) rules |
+| Ruleset                                                                | Description                                     |
+| ---------------------------------------------------------------------- | ----------------------------------------------- |
+| **[core](shareable-config/core.yaml)**                                 | **Core rules**                                  |
+| [typescript](shareable-config/typescript.yaml)                         | TypeScript rules                                |
+| [node/script](shareable-config/node/script.yaml)                       | Node.js rules in "script" mode                  |
+| [node/module](shareable-config/node/module.yaml)                       | Node.js rules in "module" mode                  |
+| [node/module/typescript](shareable-config/node/module-typescript.yaml) | Node.js rules in "module" mode using TypeScript |
+| [jest](shareable-config/jest.yaml)                                     | Jest rules                                      |
+| [browser](shareable-config/browser.yaml)                               | Browser rules                                   |
+| [react](shareable-config/react.yaml)                                   | React rules                                     |
+| [react/typescript](shareable-config/react-typescript.yaml)             | React rules using TypeScript                    |
+| [jsdoc](shareable-config/jsdoc.yaml)                                   | JSDoc rules                                     |
+| [json](shareable-config/json.yaml)                                     | JSON rules                                      |
 
 ### Dependency tree
 
 ```mermaid
   graph TD;
     core --> browser & node/script & node/module
-      browser --> nwayo & react
-        react --> pwastudio & spire & react/typescript
+      browser --> react
+        react --> react/typescript
       node/module --> jest & node/module/typescript
     jsdoc
     json
@@ -153,21 +150,6 @@ settings:
 
 - [eslint-plugin-json](https://github.com/azeemba/eslint-plugin-json) - ESLint plugin for JSON files
 - [json/recommended](https://github.com/azeemba/eslint-plugin-json#basic-configuration) - Recommended rules for JSON
-
-### `pwastudio`
-
-#### Used plugin / configuration
-
-- [eslint-plugin-package-json](https://github.com/zetlen/eslint-plugin-package-json) - Rules for valid, consistent, and readable package.json files
-- [jsx-a11y/recommended](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y#usage) - Recommended rules for accessibility rules on JSX elements
-- [package-json/recommended](https://github.com/zetlen/eslint-plugin-package-json#supported-rules) - Recommended rules for package.json files
-- [@magento/eslint-config](https://github.com/magento/magento-eslint) - Recommended rules for PWA Studio
-
-### `spire`
-
-#### Used configuration
-
-- [react/recommended](https://github.com/jsx-eslint/eslint-plugin-react#recommended) - Recommended rules for React.js
 
 ## Documentation
 
