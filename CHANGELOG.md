@@ -12,6 +12,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Changed
 - `react/typescript`: Remove `typescript` extension
+- Cleanup `package.json`
+
+### Removed
+- Remove `nwayo`
+- Remove `pwastudio`
+- Remove `spire`
 
 
 
@@ -28,11 +34,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `react`: Remove `eslint-plugin-ordered-imports`
 - `react`: Remove `ts` and `tsx` extension support
 - Maintenance updates
-
-### Removed
-- Remove `nwayo`
-- Remove `pwastudio`
-- Remove `spire`
 
 
 

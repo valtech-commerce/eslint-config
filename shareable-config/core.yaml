@@ -158,7 +158,7 @@ rules:
   # 🦄 Unicorn
   unicorn/consistent-destructuring: [off]
   unicorn/custom-error-definition: [error]
-  unicorn/expiring-todo-comments: [error, { allowWarningComments: false }]
+  unicorn/expiring-todo-comments: [error]
   unicorn/filename-case: [off]
   unicorn/import-style: [off]
   unicorn/no-array-callback-reference: [off]

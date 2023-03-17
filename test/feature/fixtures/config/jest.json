@@ -80,6 +80,9 @@
     "@babel/semi": [
       "off"
     ],
+    "@typescript-eslint/block-spacing": [
+      "off"
+    ],
     "@typescript-eslint/brace-style": [
       "off"
     ],
@@ -93,6 +96,9 @@
       "off"
     ],
     "@typescript-eslint/indent": [
+      "off"
+    ],
+    "@typescript-eslint/key-spacing": [
       "off"
     ],
     "@typescript-eslint/keyword-spacing": [
@@ -1349,11 +1355,7 @@
       "error"
     ],
     "unicorn/expiring-todo-comments": [
-      "error",
-      {
-        "allowWarningComments": false,
-        "ignoreDatesOnPullRequests": true
-      }
+      "error"
     ],
     "unicorn/explicit-length-check": [
       "error"

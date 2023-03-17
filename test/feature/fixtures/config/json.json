@@ -13,6 +13,9 @@
     "@babel/semi": [
       "off"
     ],
+    "@typescript-eslint/block-spacing": [
+      "off"
+    ],
     "@typescript-eslint/brace-style": [
       "off"
     ],
@@ -26,6 +29,9 @@
       "off"
     ],
     "@typescript-eslint/indent": [
+      "off"
+    ],
+    "@typescript-eslint/key-spacing": [
       "off"
     ],
     "@typescript-eslint/keyword-spacing": [
